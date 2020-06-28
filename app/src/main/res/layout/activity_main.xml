@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3E8BAE"
+    >
+
+    <Button
+        android:id="@+id/fbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="First Method"
+        app:layout_constraintBottom_toTopOf="@id/sbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#B3BFC8"
+        android:layout_marginTop="220dp"
+        />
+
+    <Button
+        android:id="@+id/sbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Second Method"
+        app:layout_constraintBottom_toTopOf="@id/tbtn"
+        app:layout_constraintEnd_toEndOf="@id/fbtn"
+        app:layout_constraintStart_toStartOf="@id/fbtn"
+        app:layout_constraintTop_toBottomOf="@id/fbtn"
+        android:background="#B3BFC8"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/tbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Third Method"
+        app:layout_constraintBottom_toTopOf="@id/counter"
+        app:layout_constraintEnd_toEndOf="@id/fbtn"
+        app:layout_constraintStart_toStartOf="@id/fbtn"
+        app:layout_constraintTop_toBottomOf="@id/sbtn"
+        android:layout_marginBottom="150dp"
+        android:background="#B3BFC8"
+        android:layout_marginTop="8dp"
+        />
+
+    <Button
+        android:id="@+id/counter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="counter"
+        app:layout_constraintStart_toStartOf="@id/fbtn"
+        app:layout_constraintTop_toBottomOf="@id/tbtn"
+        app:layout_constraintEnd_toEndOf="@id/fbtn"
+
+        android:background="#B3BFC8"
+        android:layout_marginTop="30dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
